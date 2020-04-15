@@ -133,6 +133,9 @@ hi Todo	    guibg=#556677  guifg=#ff0000  gui=bold    ctermbg=1	  ctermfg=12
 hi Search   guibg=#0066cc  guifg=white    gui=none ctermbg=5 ctermfg=15
 hi ColorColumn guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
 hi Todo guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
+hi CursorLineNr  ctermbg=235 ctermfg=246
+hi LineNr        ctermbg=234 ctermfg=238
+
 "}}}***********************************************************
 
 
