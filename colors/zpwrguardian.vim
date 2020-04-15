@@ -127,8 +127,14 @@ hi Ignore   guibg=black	   guifg=#cccccc  gui=italic  ctermbg=black  ctermfg=8
 hi Error    guibg=#ff0000  guifg=white	  gui=bold    ctermbg=12  ctermfg=15
 hi Todo	    guibg=#556677  guifg=#ff0000  gui=bold    ctermbg=1	  ctermfg=12
 
+
+"{{{                    MARK:Mod
+"**************************************************************
 hi Search   guibg=#0066cc  guifg=white    gui=none ctermbg=5 ctermfg=15
 hi ColorColumn guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
+hi Todo guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
+"}}}***********************************************************
+
 
 
 hi htmlH2 guibg=black guifg=fg gui=bold ctermbg=8 ctermfg=fg
