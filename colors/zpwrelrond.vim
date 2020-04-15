@@ -118,6 +118,7 @@ highlight LiningError ctermbg=Red   ctermfg=White
 hi Search   guibg=#0066cc  guifg=white    gui=none ctermbg=4 ctermfg=white
 hi MatchParen guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
 hi Operator guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
+hi ColorColumn guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
 
 
 highlight link LiningVcsInfo LiningItem
