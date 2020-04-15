@@ -35,14 +35,24 @@
 " Last Modified: April 15, 2020
 
 set background=dark
+
+"{{{                    MARK:Reset
+"**************************************************************
 hi clear
 syntax reset
+"}}}***********************************************************
 
-" Colors for the User Interface.
 
 hi Cursor      guibg=#cc4455  guifg=white    gui=bold ctermbg=4 ctermfg=15
 hi link CursorIM Cursor
+
+"{{{                    MARK:Transparent BG
+"**************************************************************
 hi Normal      guibg=#332211  guifg=white    gui=none ctermfg=15
+"}}}***********************************************************
+
+"{{{                    MARK:Rest
+"**************************************************************
 hi NonText     guibg=#445566  guifg=#ffeecc  gui=bold ctermbg=8 ctermfg=14
 hi Visual      guibg=#557799  guifg=white    gui=none ctermbg=9 ctermfg=15
 
@@ -124,8 +134,11 @@ hi link htmlH4 htmlH3
 hi link htmlH5 htmlH4
 hi link htmlH6 htmlH5
 
-" And finally.
+"}}}***********************************************************
 
+"{{{                    MARK:Colorscheme name
+"**************************************************************
 let g:colors_name = "Guardianopacity"
 let colors_name   = "Guardianopacity"
+"}}}***********************************************************
 
