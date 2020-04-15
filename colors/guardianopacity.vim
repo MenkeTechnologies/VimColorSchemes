@@ -54,14 +54,13 @@ hi Normal      guibg=#332211  guifg=white    gui=none ctermfg=15
 "{{{                    MARK:Rest
 "**************************************************************
 hi NonText     guibg=#445566  guifg=#ffeecc  gui=bold ctermbg=8 ctermfg=14
-hi Visual      guibg=#557799  guifg=white    gui=none ctermbg=9 ctermfg=15
+hi Visual      guibg=#557799  guifg=white    gui=none ctermbg=6 ctermfg=15
 
 hi Linenr      guibg=black	      guifg=#aaaaaa  gui=none ctermbg=black ctermfg=7
 
 hi Directory   guibg=black	      guifg=#337700  gui=none ctermbg=black ctermfg=10
 
 hi IncSearch   guibg=#0066cc  guifg=white    gui=none ctermbg=1 ctermfg=15
-hi link Seach IncSearch
 
 hi SpecialKey  guibg=black	guifg=fg       gui=none ctermbg=black ctermfg=fg
 hi Titled      guibg=black	guifg=fg       gui=none ctermbg=black ctermfg=fg
@@ -127,6 +126,8 @@ hi Title    guibg=#445566  guifg=white	  gui=bold    ctermbg=1	  ctermfg=15
 hi Ignore   guibg=black	   guifg=#cccccc  gui=italic  ctermbg=black  ctermfg=8
 hi Error    guibg=#ff0000  guifg=white	  gui=bold    ctermbg=12  ctermfg=15
 hi Todo	    guibg=#556677  guifg=#ff0000  gui=bold    ctermbg=1	  ctermfg=12
+
+hi Search   guibg=#0066cc  guifg=white    gui=none ctermbg=6 ctermfg=15
 
 hi htmlH2 guibg=black guifg=fg gui=bold ctermbg=8 ctermfg=fg
 hi link htmlH3 htmlH2
