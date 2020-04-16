@@ -1,3 +1,11 @@
+"{{{                    MARK:Header
+"**************************************************************
+"#### Author: MenkeTechnologies
+"#### GitHub: https://github.com/MenkeTechnologies
+"#### Date: Thu Apr 16 13:08:28 EDT 2020
+"#### Purpose: vim script to  
+"#### Notes: 
+"}}}***********************************************************
 " sprinkles - a vim colorscheme with a configurable color palette
 " Maintainer: Alex Griffin <alex@alexjgriffin.com>
 " Version:    0.2.0-pre
@@ -10,7 +18,7 @@ highlight clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "sprinkles"
+let g:colors_name = "zpwrsprinkles"
 
 " }}}
 

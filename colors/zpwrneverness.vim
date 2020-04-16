@@ -11,7 +11,7 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let g:colors_name = 'neverness'
+let g:colors_name = 'zpwrneverness'
 
 " Comments: grey
 hi Comment        ctermfg=DarkCyan     guifg=#848484 guibg=#000000 gui=none 

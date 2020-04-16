@@ -12,7 +12,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "elrond"
+let g:colors_name = "zpwrelrond"
 
 let g:elrond#cursorline   = get(g:, 'elrond#cursorline',         1)
 let g:elrond#cursorline16 = get(g:, 'elrond#cursorline16' , 'bold')

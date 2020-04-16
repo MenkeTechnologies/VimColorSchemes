@@ -29,7 +29,7 @@
 " https://github.com/menketechnologies
 "
 
-" File: guardianopacity.vim
+" File: zpwrguardian.vim
 " Author: MenkeTechnologies
 " Description: transparent guardian
 " Last Modified: April 15, 2020
@@ -155,7 +155,7 @@ hi link htmlH6 htmlH5
 
 "{{{                    MARK:Colorscheme name
 "**************************************************************
-let g:colors_name = "Guardianopacity"
-let colors_name   = "Guardianopacity"
+let g:colors_name = "zpwrguardian"
+let colors_name   = "zpwrguardian"
 "}}}***********************************************************
 
