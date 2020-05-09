@@ -108,8 +108,8 @@ endif
 
 " Search & Special characters' colors {{{1
 if has("extra_search")
-  hi Search ctermbg=Yellow ctermfg=Black cterm=NONE guibg=Yellow guifg=Black gui=none
-  hi IncSearch ctermbg=Green ctermfg=Black cterm=NONE guibg=Green guifg=Black gui=none
+  hi Search ctermbg=DarkBlue ctermfg=Gray cterm=NONE guibg=Yellow guifg=Black gui=none
+  hi IncSearch ctermbg=Green ctermfg=White cterm=NONE guibg=Green guifg=Black gui=none
 endif
 hi NonText ctermbg=Black ctermfg=DarkGray guibg=Black guifg=DarkGray gui=none
 hi SpecialKey ctermbg=Black ctermfg=DarkCyan guibg=Black guifg=DarkCyan gui=none
@@ -129,7 +129,7 @@ if has("wildmenu")
 endif
 
 if has("visual")
-  hi Visual ctermbg=Yellow ctermfg=Black cterm=NONE guibg=#ffffcc guifg=Black gui=none
+  hi Visual ctermbg=DarkBlue ctermfg=Gray cterm=NONE guibg=#ffffcc guifg=Black gui=none
   hi VisualNOS ctermbg=DarkBlue ctermfg=Yellow cterm=NONE guibg=#ffffcc guifg=DarkRed gui=none
 endif
 
