@@ -84,7 +84,7 @@ if !exists("s:main")
         endif
 
         execute "hi Constant         guifg=#FFFFFF guibg=NONE                 ctermfg=7 ctermbg=6 cterm=NONE"
-        execute "hi Identifier       guifg=#38FF56 guibg=NONE gui=".s:bold."  ctermfg=0"
+        execute "hi Identifier       guifg=#38FF56 guibg=NONE gui=".s:bold."  ctermfg=4 ctermbg=Black"
         execute "hi Statement        guifg=#FFFF00 guibg=NONE gui=".s:bold."  ctermfg=7 ctermbg=4"
         execute "hi Special          guifg=#25B9F8 guibg=bg   gui=".s:bold."  ctermfg=2 cterm=underline ctermbg=Black"
         execute "hi PreProc          guifg=#FF80FF guibg=bg   gui=NONE        ctermfg=3 ctermbg=Black"
