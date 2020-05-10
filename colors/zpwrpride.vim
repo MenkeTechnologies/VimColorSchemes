@@ -74,7 +74,7 @@ hi clear Todo
 " definitions
 """"""""""""""
 execute printf("hi Normal ctermbg=None")
-execute printf("hi Subtle ctermfg=%s ctermbg=%s", g:pride_background + 2, 'None')
+execute printf("hi Subtle ctermfg=%s ctermbg=%s", g:pride_background + 3, 'None')
 execute printf("hi Highlight ctermbg=%s", g:pride_background + 1)
 execute printf("hi HighlightSubtle ctermbg=%s ctermfg=%s", g:pride_background + 1, g:pride_background + 2)
 execute printf("hi Invisible ctermfg=%s", g:pride_background)
