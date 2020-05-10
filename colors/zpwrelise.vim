@@ -1,43 +1,56 @@
-"==============================================================================.
-"        File: elise.vim                                                       |
-"     License: Public Domain, FREE as LOVE.                                    |
-" Description: The colorscheme "Für Elise".                                    |
-"              A pinky-yellowy-greeny colorscheme inspired on a popular        |
-"              classical composition of "Ludwig van Beethoven", called         |
-"              "Für Elise" (For Elise).                                        |
-"        Note: - Only standard (for all languages) highlight-groups are set.   |
-"              - This colorscheme _should_ look nice everywhere.               |
-"==============================================================================|
-"      Author: drachenkiraa, {_drachen_kiraa_}@{_gmail_}.{com_}  (remove: _{}) |
-" Last Change: 2009 Jul 1                                                      |
-"     Version: 1.0                                                             |
-"==========================================================================={{{1
-"  Color Test: :he group-name                                                  |
-"              :so $VIMRUNTIME/syntax/hitest.vim                               |
-"   Tested On: - Linux (gvim v6.3, v6.4);                                      |
-"              - Standard Linux Terminal (vim v6.3, v6.4);                     |
-"              - Xterm, Rxvt, Konsole, gnome-terminal (vim v6.3, v6.4).        |
-"              - Windows (gvim v7.1, v7.2);                                    |
-"              - DOS (vim v7.1, v7.2).                                         |
-"        TODO: * Test this colorscheme on newer versions of vim/gvim for Linux |
-"                and other systems (*BSD, Mac, Amiga?).                        |
-"              * Are all the has("feature") checks really worth?               |
-"                Please enlighten me if I'm wrong.                             |
-"==============================================================================|
-" Random Tips:                                                                 |
-" * If your terminal supports more than 8 colors (which is the case of most    |
-"   modern xterms, rxvts, and others), then it is worth adding the following   |
-"   lines somewhere into your .vimrc:                                          |
-"       if &term =~ "xterm"                                                    |
-"         set t_Co=16                                                          |
-"       endif                                                                  |
-"   That'll make this colorscheme look a lot better on such terminals.         |
-"   For further help checkout:                                                 |
-"       :he term-dependent-settings                                            |
-"       :he term                                                               |
-"===========================================================================}}}1
-" Initial setup stuff {{{1
-" Remove existing highlighting
+    "...     ..      ..                                    ..                 
+  "x*8888x.:*8888: -"888:                            < .z@8"`                 
+ "X   48888X `8888H  8888                 u.    u.    !@88E                   
+"X8x.  8888X  8888X  !888>       .u     x@88k u@88c.  '888E   u         .u    
+"X8888 X8888  88888   "*8%-   ud8888.  ^"8888""8888"   888E u@8NL    ud8888.  
+"'*888!X8888> X8888  xH8>   :888'8888.   8888  888R    888E`"88*"  :888'8888. 
+  "`?8 `8888  X888X X888>   d888 '88%"   8888  888R    888E .dN.   d888 '88%" 
+  "-^  '888"  X888  8888>   8888.+"      8888  888R    888E~8888   8888.+"    
+   "dx '88~x. !88~  8888>   8888L        8888  888R    888E '888&  8888L      
+ ".8888Xf.888x:!    X888X.: '8888c. .+  "*88*" 8888"   888E  9888. '8888c. .+ 
+":""888":~"888"     `888*"   "88888%      ""   'Y"   '"888*" 4888"  "88888%   
+    ""~'    "~        ""       "YP'                     ""    ""      "YP'    
+                                                                             
+                                                                             
+                                                                             
+    ".....                                                                     
+ ".H8888888h.  ~-.                         .uef^"                              
+ "888888888888x  `>                      :d88E          u.    u.          u.   
+"X~     `?888888hx~      .u          .   `888E        x@88k u@88c.  ...ue888b  
+"'      x8.^"*88*"    ud8888.   .udR88N   888E .z8k  ^"8888""8888"  888R Y888r 
+ "`-:- X8888x       :888'8888. <888'888k  888E~?888L   8888  888R   888R I888> 
+      "488888>      d888 '88%" 9888 'Y"   888E  888E   8888  888R   888R I888> 
+    ".. `"88*       8888.+"    9888       888E  888E   8888  888R   888R I888> 
+  "x88888nX"      . 8888L      9888       888E  888E   8888  888R  u8888cJ888  
+ "!"*8888888n..  :  '8888c. .+ ?8888u../  888E  888E  "*88*" 8888"  "*888*P"   
+"'    "*88888888*    "88888%    "8888P'  m888N= 888>    ""   'Y"      'Y"      
+        "^"***"`       "YP'       "P'     `Y"   888                            
+                                              "J88"                            
+                                              "@%                              
+                                            ":"                                
+      "..                            .                  .x+=:.   
+"x .d88"                            @88>               z`    ^%  
+ "5888R          u.                 %8P                   .   <k 
+ "'888R    ...ue888b       uL        .         .u       .@8Ned8" 
+  "888R    888R Y888r  .ue888Nc..  .@88u    ud8888.   .@^%8888"  
+  "888R    888R I888> d88E`"888E` ''888E` :888'8888. x88:  `)8b. 
+  "888R    888R I888> 888E  888E    888E  d888 '88%" 8888N=*8888 
+  "888R    888R I888> 888E  888E    888E  8888.+"     %8"    R88 
+  "888R   u8888cJ888  888E  888E    888E  8888L        @8Wou 9%  
+ ".888B .  "*888*P"   888& .888E    888&  '8888c. .+ .888888P`   
+ "^*888%     'Y"      *888" 888&    R888"  "88888%   `   ^"F     
+   ""%                 `"   "888E    ""      "YP'                
+                     ".dWi   `88E                                
+                     "4888~  J8%                                 
+                      "^"===*"`                                  
+" https://github.com/menketechnologies
+"
+
+" File: zpwrelise.vim
+" Author: MenkeTechnologies
+" Description: elise?
+" Last Modified: April 15, 2020
+"
 set background=dark
 hi clear
 if exists("syntax_on")
