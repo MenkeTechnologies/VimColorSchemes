@@ -33,7 +33,7 @@ jobs:
           done
           exit $fail
 
-      - name: Count colorschemes (catastrophic-shrink guard: floor at 600)
+      - name: "Count colorschemes — catastrophic-shrink guard, floor at 600"
         run: |
           set -euo pipefail
           total=$(ls colors/*.vim | wc -l)
