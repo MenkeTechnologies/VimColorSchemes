@@ -79,3 +79,16 @@ jobs:
           set -euo pipefail
           chmod +x tests/validate-colorschemes.sh
           tests/validate-colorschemes.sh colors
+
+  repo-contract:
+    name: Repo-contract (badge, empty files, no spaces)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Run tests/repo-contract.sh
+        # Pins README's `schemes-N` badge matches colors/, every
+        # colorscheme is non-empty, no filename contains a space.
+        # Matches the contributor-local script so `bash tests/repo-contract.sh`
+        # produces the same result locally as in CI.
+        run: bash tests/repo-contract.sh
