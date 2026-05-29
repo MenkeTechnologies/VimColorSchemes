@@ -7,12 +7,12 @@
 ```
 
 <p align="center">
-<code>// 731 COLORSCHEMES. ONE PATHOGEN BUNDLE. PAINT THE TERMINAL.</code>
+<code>// 732 COLORSCHEMES. ONE PATHOGEN BUNDLE. PAINT THE TERMINAL.</code>
 </p>
 
 ---
 
-[![Schemes](https://img.shields.io/badge/schemes-731-ff2a6d.svg)](colors/)
+[![Schemes](https://img.shields.io/badge/schemes-732-ff2a6d.svg)](colors/)
 [![Curator](https://img.shields.io/badge/curated_by-MenkeTechnologies-05d9e8.svg)](https://github.com/MenkeTechnologies)
 [![Loader](https://img.shields.io/badge/loader-pathogen-d300c5.svg)](https://github.com/tpope/vim-pathogen)
 [![Tag](https://img.shields.io/badge/tag-v0.1.0-39ff14.svg)](https://github.com/MenkeTechnologies/VimColorSchemes/tags)
@@ -20,7 +20,7 @@
 
 ### `[SIGNAL // THE LARGEST CURATED VIM COLORSCHEME BUNDLE IN ONE BAGGED PLUGIN]`
 
-> *// jacking into 731 distinct color decks — one `git clone`, every neon, every pastel, every gruvbox //*
+> *// jacking into 732 distinct color decks — one `git clone`, every neon, every pastel, every gruvbox //*
 
 ---
 
