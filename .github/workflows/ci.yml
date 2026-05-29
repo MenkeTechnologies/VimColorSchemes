@@ -92,3 +92,16 @@ jobs:
         # Matches the contributor-local script so `bash tests/repo-contract.sh`
         # produces the same result locally as in CI.
         run: bash tests/repo-contract.sh
+
+  colors-name-pinned:
+    name: Colors-name pinned (MenkeTechnologies-authored schemes)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Run tests/colors-name-pinned.sh
+        # Pins that this repo's own authored schemes (menketech-cyberpunk,
+        # zpwr*) declare `let g:colors_name = '<basename>'`. Vendored upstream
+        # mismatches stay tolerated as INFO by repo-contract.sh, but our own
+        # schemes have no excuse — completion must work after sourcing.
+        run: bash tests/colors-name-pinned.sh

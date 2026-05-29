@@ -55,7 +55,7 @@ hi clear
 if exists("syntax_on")
   syntax reset
 endif
-let g:colors_name = "pride"
+let g:colors_name = "zpwrpride"
 if !exists('g:pride_background') 
   let g:pride_background=233
 endif
