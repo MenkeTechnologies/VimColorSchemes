@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    name: Static colorscheme audit (no vim required)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every colors/*.vim is non-empty + ends in .vim
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in colors/*.vim; do
+            if [[ ! -s "$f" ]]; then
+              echo "::error file=$f::Empty colorscheme file"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      - name: Count colorschemes (catastrophic-shrink guard: floor at 600)
+        run: |
+          set -euo pipefail
+          total=$(ls colors/*.vim | wc -l)
+          echo "Total colorschemes: $total"
+          if [[ "$total" -lt 600 ]]; then
+            echo "::error::Colorscheme count dropped below floor of 600 (got $total)"
+            exit 1
+          fi
+
+      - name: Audit g:colors_name coverage (informational)
+        run: |
+          set -euo pipefail
+          missing=0
+          for f in colors/*.vim; do
+            if ! grep -qE '(let\s+g:colors_name\s*=|let\s+colors_name\s*=)' "$f"; then
+              missing=$((missing + 1))
+            fi
+          done
+          total=$(ls colors/*.vim | wc -l)
+          echo "Schemes missing 'let g:colors_name=': $missing / $total"
+          # ~5% of vendored schemes pre-date the convention. Floor: 60 max
+          # (well above current 38) — if it spikes past 60, someone added
+          # broken schemes.
+          if [[ "$missing" -gt 60 ]]; then
+            echo "::error::Too many schemes missing g:colors_name ($missing > 60 floor)"
+            exit 1
+          fi
+
+  vim-load:
+    name: Vim-load test (every scheme sources without script-level errors)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install vim (no GUI, no plugins)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y vim-nox
+
+      - name: Run validator against all schemes
+        run: |
+          set -euo pipefail
+          chmod +x tests/validate-colorschemes.sh
+          tests/validate-colorschemes.sh colors
