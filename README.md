@@ -26,7 +26,7 @@
 
 ## `> SYSTEM OVERVIEW`
 
-**VimColorSchemes** is a 731-deck bundle of Vim colorschemes — every `.vim` file in `colors/` is a working `:colorscheme` target the moment the bundle is loaded. No per-scheme installs, no plugin manager-of-the-week churn, no curating six community packs to get one missing palette. One bundle. Every scheme. Hand-curated by [MenkeTechnologies](https://github.com/MenkeTechnologies).
+**VimColorSchemes** is a 732-deck bundle of Vim colorschemes — every `.vim` file in `colors/` is a working `:colorscheme` target the moment the bundle is loaded. No per-scheme installs, no plugin manager-of-the-week churn, no curating six community packs to get one missing palette. One bundle. Every scheme. Hand-curated by [MenkeTechnologies](https://github.com/MenkeTechnologies).
 
 Drop the bundle into Pathogen, pick a scheme, move on.
 
@@ -35,7 +35,7 @@ Drop the bundle into Pathogen, pick a scheme, move on.
 ## `> CAPABILITIES`
 
 ```
-[x] 731 distinct Vim colorschemes in a single Pathogen-loadable bundle
+[x] 732 distinct Vim colorschemes in a single Pathogen-loadable bundle
 [x] Zero runtime — pure `colors/*.vim` files, no autoload scripts
 [x] Works with every Vim plugin loader that honours `runtimepath` /
     `:colorscheme <name>` (Pathogen, vim-plug, packer, lazy.nvim, native packages)
@@ -113,7 +113,7 @@ nnoremap <silent> <Leader>c :Colors<CR>
 
 ```
 VimColorSchemes/
-├── colors/   ← 731 *.vim files, drop-in to runtimepath
+├── colors/   ← 732 *.vim files, drop-in to runtimepath
 └── README.md ← this file
 ```
 
@@ -126,5 +126,5 @@ VimColorSchemes/
 ---
 
 <p align="center">
-<code>// END OF FILE // 731 SIGNALS LOCKED //</code>
+<code>// END OF FILE // 732 SIGNALS LOCKED //</code>
 </p>
