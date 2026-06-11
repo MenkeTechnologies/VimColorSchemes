@@ -113,8 +113,10 @@ nnoremap <silent> <Leader>c :Colors<CR>
 
 ```
 VimColorSchemes/
-├── colors/   ← 732 *.vim files, drop-in to runtimepath
-└── README.md ← this file
+├── colors/    ← 732 *.vim files, drop-in to runtimepath
+├── tests/     ← repo-contract + colorscheme validation scripts
+├── license.md ← MIT (curation layer)
+└── README.md  ← this file
 ```
 
 ---
