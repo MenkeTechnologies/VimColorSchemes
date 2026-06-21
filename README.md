@@ -42,8 +42,8 @@ Drop the bundle into Pathogen, pick a scheme, move on.
 [x] Neovim compatible
 [x] Dark, light, pastel, neon, monochrome — every aesthetic family covered
 [x] Compatible with terminal Vim (256-color + truecolor) and GUI Vim
-[x] Includes ports/forks of community classics (gruvbox, dracula, solarized,
-    molokai, jellybeans, nord, tokyo-night, catppuccin, …) alongside niche /
+[x] Includes ports/forks of community classics (gruvbox, solarized, molokai,
+    jellybeans, onedark, zenburn, …) alongside niche /
     artistic / one-off palettes that don't exist anywhere else as a bundle
 ```
 
@@ -84,9 +84,9 @@ After install, pick any scheme from `colors/`:
 
 ```vim
 :colorscheme gruvbox
-:colorscheme dracula
+:colorscheme onedark
 :colorscheme molokai
-:colorscheme tokyonight
+:colorscheme solarized
 ```
 
 For a random shuffle on every Vim launch:
