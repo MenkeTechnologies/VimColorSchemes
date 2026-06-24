@@ -10,6 +10,8 @@
 <code>// 732 COLORSCHEMES. ONE PATHOGEN BUNDLE. PAINT THE TERMINAL.</code>
 </p>
 
+### [`Read the Docs`](https://menketechnologies.github.io/VimColorSchemes/) &middot; [`Engineering Report`](https://menketechnologies.github.io/VimColorSchemes/report.html)
+
 ---
 
 [![Schemes](https://img.shields.io/badge/schemes-732-ff2a6d.svg)](colors/)
