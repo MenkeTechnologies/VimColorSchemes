@@ -17,7 +17,7 @@
 [![Schemes](https://img.shields.io/badge/schemes-732-ff2a6d.svg)](colors/)
 [![Curator](https://img.shields.io/badge/curated_by-MenkeTechnologies-05d9e8.svg)](https://github.com/MenkeTechnologies)
 [![Loader](https://img.shields.io/badge/loader-pathogen-d300c5.svg)](https://github.com/tpope/vim-pathogen)
-[![Tag](https://img.shields.io/badge/tag-v0.1.0-39ff14.svg)](https://github.com/MenkeTechnologies/VimColorSchemes/tags)
+[![Tag](https://img.shields.io/github/v/tag/MenkeTechnologies/VimColorSchemes?sort=semver&label=tag&color=39ff14)](https://github.com/MenkeTechnologies/VimColorSchemes/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### `[SIGNAL // THE LARGEST CURATED VIM COLORSCHEME BUNDLE IN ONE BAGGED PLUGIN]`
