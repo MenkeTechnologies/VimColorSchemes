@@ -20,7 +20,7 @@
 [![Tag](https://img.shields.io/github/v/tag/MenkeTechnologies/VimColorSchemes?sort=semver&label=tag&color=39ff14)](https://github.com/MenkeTechnologies/VimColorSchemes/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-### `[SIGNAL // THE LARGEST CURATED VIM COLORSCHEME BUNDLE IN ONE BAGGED PLUGIN]`
+### `[SIGNAL // CURATED VIM COLORSCHEME BUNDLE IN ONE PLUGIN]`
 
 > *// jacking into 732 distinct color decks — one `git clone`, every neon, every pastel, every gruvbox //*
 
@@ -28,7 +28,7 @@
 
 ## `> SYSTEM OVERVIEW`
 
-**VimColorSchemes** is a 732-deck bundle of Vim colorschemes — every `.vim` file in `colors/` is a working `:colorscheme` target the moment the bundle is loaded. No per-scheme installs, no plugin manager-of-the-week churn, no curating six community packs to get one missing palette. One bundle. Every scheme. Hand-curated by [MenkeTechnologies](https://github.com/MenkeTechnologies).
+**VimColorSchemes** is a 732-deck bundle of Vim colorschemes — every `.vim` file in `colors/` is a working `:colorscheme` target the moment the bundle is loaded. No per-scheme installs. Curated by [MenkeTechnologies](https://github.com/MenkeTechnologies).
 
 Drop the bundle into Pathogen, pick a scheme, move on.
 
@@ -42,11 +42,11 @@ Drop the bundle into Pathogen, pick a scheme, move on.
 [x] Works with every Vim plugin loader that honours `runtimepath` /
     `:colorscheme <name>` (Pathogen, vim-plug, packer, lazy.nvim, native packages)
 [x] Neovim compatible
-[x] Dark, light, pastel, neon, monochrome — every aesthetic family covered
+[x] Dark, light, pastel, neon, monochrome
 [x] Compatible with terminal Vim (256-color + truecolor) and GUI Vim
 [x] Includes ports/forks of community classics (gruvbox, solarized, molokai,
     jellybeans, onedark, zenburn, …) alongside niche /
-    artistic / one-off palettes that don't exist anywhere else as a bundle
+    artistic / one-off palettes
 ```
 
 ---
